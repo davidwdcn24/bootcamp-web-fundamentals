@@ -1,0 +1,28 @@
+h1{
+    padding: 0.2em 0.5em;
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+}
+
+h1 span{
+    color: rgb(0, 255, 255);
+}
+
+h2{
+    padding: 0.2em 0.5em;
+    color: white;
+    background-color: rebeccapurple;
+    text-align: center;
+    font-family: sans-serif;
+    font-style: italic;
+}
+
+h3{
+    padding: 0.2em 0.5em;
+    color: rgb(32, 18, 77);
+    background-color: rgb(159, 197, 248);
+    text-align: end;
+    text-decoration: underline;
+    font-family: monospace;
+}

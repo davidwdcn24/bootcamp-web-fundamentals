@@ -1,0 +1,45 @@
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.container button {
+    margin-top: 10px;
+    font-family: sans-serif;
+}
+
+.search{
+    width: 150px;
+    height: 35px;
+    border-radius: 25px;
+    border: 0.2em solid rgb(17, 155, 157);
+    color: rgb(17, 155, 157);
+    padding: 0.5em 0;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: rgb(245, 245, 245);
+}
+
+.plus{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    padding-top: 3px;
+    padding-bottom: 1px;
+    font-size: 25px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 209, 178);
+    border: 0;
+}
+
+.account{
+    width: 180px;
+    height: 35px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(43, 120, 228);
+    border: 0.2em solid rgb(0, 0, 0);
+    font-size: 14px;
+    box-shadow: 5px 5px rgb(0 0 0);
+    padding: 0.5em 0;
+}

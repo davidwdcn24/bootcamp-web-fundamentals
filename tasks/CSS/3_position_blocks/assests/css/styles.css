@@ -3,8 +3,6 @@
     background-color: silver;
     margin: 0px auto;
     padding: 1.5em;
-    display: flex;
-    flex-wrap: wrap;
 }
 
 .top-nav {
@@ -18,15 +16,16 @@
     height: 300px;
     width: 200px;
     background-color: blue;
-    margin-right: 1em;
+    display: inline-block;
+    margin-right: 0.85em;
 }
 
 .main {
     height: 400px;
     width: 700px;
     background-color: red;
-    display: flex;
-    flex-wrap: wrap;
+    vertical-align: top;
+    display: inline-block;
     padding: 1em;
 }
 
@@ -34,6 +33,7 @@
     height: 200px;
     width: 210px;
     background-color: yellow;
+    display: inline-block;
     margin: 0.5em;
 }
 

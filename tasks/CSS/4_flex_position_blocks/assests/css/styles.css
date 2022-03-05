@@ -2,8 +2,6 @@
     width: 950px;
     background-color: silver;
     margin: 0px auto;
-    display: flex;
-    flex-wrap: wrap;
     padding: 1.5em;
 }
 
@@ -25,8 +23,6 @@
     width: 700px;
     background-color: red;
     margin-left: 1.5em;
-    display: flex;
-    flex-direction: column;
 }
 
 .sub-content {

@@ -1,0 +1,301 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0 none;
+    outline: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+.container {
+    width: 100%;
+}
+
+/* INICIO DE LA BARRA DE NAVEGACIÓN */
+
+.header {
+    width: 100%;
+    color: #FBFBFB;
+    background-color: #333333;
+}
+
+.nav {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.5em 0 0.5em 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav .nav-main {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.nav .nav-main .nav-title {
+    margin: 0;
+}
+
+.nav .nav-main .nav-links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0 2em;
+}
+
+.nav .nav-main .nav-links li {
+    text-align: center;
+}
+
+.nav .nav-main .nav-links li a {
+    text-decoration: none;
+    color: #A7A7A7;
+    padding: 5px 12px;
+}
+.nav .nav-main .nav-links li a.active {
+    font-weight: 600;
+    color: #FBFBFB;
+}
+
+.nav .actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.nav .actions .btn {
+    background-color: #17A2B8;
+    padding: 5px 20px;
+    color: #FBFBFB;
+    cursor: pointer;
+    border-radius: 5px;
+    height: 40px;
+    border: 2px solid #A7A7A7;
+}
+
+.nav .actions .btn:hover {
+    /* box-shadow: 5px 5px 10px #17A2B8; */
+    font-size: 15px;
+    font-weight: 600;
+    border: 3px solid #A7A7A7;
+}
+
+/* FIN DE LA BARRA DE NAVEGACIÓN */
+
+/* INICIO DEL CONTENIDO */
+
+.profile-content {
+    width: 900px;
+    display: flex;
+    align-items: flex-start;
+    margin: 2em auto 0 auto;
+}
+
+.profile-content .profile-data {
+    flex: 2;
+    flex-direction: column;
+    margin-right: 2em;
+}
+
+.profile-content .profile-data .presentation,
+.profile-content .profile-data .education,
+.profile-content .profile-connections .requests,
+.profile-content .profile-connections .connections {
+    width: 100%;
+}
+
+.profile-content .profile-data .presentation .header-card {
+    background-color: #17A2B8;
+    height: 80px;
+    border: 2px solid #17A2B8;
+}
+
+.profile-content .profile-data .presentation .content-card {
+    height: 200px;
+    border: 2px solid #A7A7A7;
+    border-top: 2px solid #17A2B8;
+    padding: 1em 0 0 3em;
+}
+
+.profile-content .profile-data .presentation .content-card .img-card-user {
+    width: 80px;
+    position: absolute;
+    top: 115px;
+    border: 3px solid #A7A7A7;
+    border-radius: 50%;
+    background-color: #A7A7A7;
+}
+
+.profile-content .profile-data .presentation .content-card h1 {
+    margin-top: 25px;
+    font-size: 2em;
+}
+
+.profile-content .profile-data .presentation .card-ubication, 
+.profile-content .profile-data .presentation .card-information, 
+.profile-content .profile-data .presentation .card-edit-profile {
+    margin-top: 1em;
+}
+
+.profile-content .profile-data .presentation .card-ubication, 
+.profile-content .profile-data .presentation .card-edit-profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile-content .profile-data .presentation .card-ubication img, 
+.profile-content .profile-data .presentation .card-edit-profile img {
+    width: 20px;
+}
+
+.profile-content .profile-data .presentation .card-ubication span {
+    margin-left: 0.5em;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.profile-content .profile-data .presentation .card-information {
+    height: 40px;
+}
+
+.profile-content .profile-data .presentation .card-information p {
+    margin-top: 2px;
+}
+
+.profile-content .profile-data .presentation .card-edit-profile a {
+    margin-left: 0.5em;
+    font-weight: 600;
+    color: #327CE5;
+}
+
+.profile-content .profile-data .education {
+    margin-top: 2em;
+}
+
+.card {
+    width: 100%;
+    border: 2px solid #A7A7A7;
+}
+
+.card .header-card {
+    background-color: #333333;
+    color: #FCFCFC ;
+    border-bottom: 2px solid #A7A7A7;
+    padding: 0.5em 1.5em;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+}
+
+.card .header-card .btn-connections {
+    background-color: #A7A7A7;
+    height: 30px;
+    width: 45px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    margin-right: 0.5em;
+    color: #333333;
+}
+
+.card .header-card .btn-requests {
+    background-color: #A7A7A7;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    margin-right: 0.5em;
+    color: #333333;
+}
+
+.card .content-card {
+    padding: 0.5em 1.5em;
+}
+
+.card .content-card .content-card-title {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+}
+
+.card .content-card .content-card-date {
+    font-size: 15px;
+    font-weight: 600;
+    color: #A7A7A7;
+    margin-bottom: 0.5em;
+}
+
+.card .content-card .content-card-datails {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 0.5em;
+}
+
+.card .content-card .content-card-requests,
+.card .content-card .content-card-connections {
+    list-style: none;
+    margin-top: 0.5em;
+}
+
+.card .content-card .content-card-requests li,
+.card .content-card .content-card-connections li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.5em;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.card .content-card .content-card-requests li .imagen-requests,
+.card .content-card .content-card-connections li .imagen-connections {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.card .content-card .content-card-requests li .imagen-requests img,
+.card .content-card .content-card-connections li .imagen-connections img {
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 0.5em;
+}
+
+.card .content-card .content-card-requests li .actions-requests {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.card .content-card .content-card-requests li .actions-requests img {
+    width: 30px;
+    margin-right: 0.5em;
+}
+
+.card .content-footer {
+    padding: 0.5em 1.5em;
+    border-top: 2px solid #A7A7A7;
+}
+
+.card .content-footer a {
+    font-weight: 600;
+    color: #327CE5;
+}
+
+.profile-content .profile-connections {
+    flex: 1;
+    flex-direction: column;
+}
+
+.profile-content .profile-connections .connections {
+    margin-top: 2em;
+}
+
+/* FIN DEL CONTENIDO */

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tarjeta de usuario (deber número 8)">
+    <meta name="author" content="Washington Campaña - CodingDojo">
+    <meta name="keywords" content="Profile html css flex CodingDojo">
+    <meta name="copyright" content="Washington Campaña - CodingDojo" />
+    <meta http-equiv="cache-control" content="no-cache"/>
+    <title>Dojonary</title>
+
+    <link rel="stylesheet" href="assets/css/styles.css" type="text/css"/>
+    <script src="assets/js/scritp.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="nav">
+                <h1 class="nav-title">Dojonary</h1>
+                <div class="nav-search">
+                    <input type="text" name="txtSearch" id="txtSearch" placeholder="Search"/>
+                </div>
+                <div class="nav-actions">
+                    <button class="btn" id="btnLogin" onclick="changeTextLogin()">Login</button>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="left-panel">
+                <div class="row">
+                    <div class="word-section">
+                        <div class="title">ninja</div>
+                        <div class="sound">noun</div>
+                        <div class="plural"><span>Plural: <em>ninjas</em></span></div>
+                        <div class="actions">
+                            <button type="button" class="btn" id="btnLikesOne" title="13 likes" onclick="showAlert()">13 likes</button>
+                        </div>
+                    </div>
+                    <div class="description-section">
+                        <span>A practitioner skilled in the <a href="#">Japanese</a> art of <a href="#">ninjutsu</a></span>
+                    </div>
+                </div>
+                <div class="row fin">
+                    <div class="word-section">
+                        <div class="title">ninja</div>
+                        <div class="sound">noun</div>
+                        <div class="plural"><span>Plural: <em>ninjas</em></span></div>
+                        <div class="actions">
+                            <button type="button" class="btn" id="btnLikesTwo" title="37 likes" onclick="showAlert()">13 likes</button>
+                        </div>
+                    </div>
+                    <div class="description-section">
+                        <span>A <a href="#">programmer</a> who breaks down problems with <a href="#">zen</a></span>-like focus
+                    </div>
+                </div>
+            </div>
+            <div class="right-panel">
+                <div class="row">
+                    <span>Dojonary is defined by YOU</span>
+                    <button type="button" class="btn" onclick="removeElement(this)">Add Definition</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

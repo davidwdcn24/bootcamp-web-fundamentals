@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.row {
+    width: 100%;
+}
+
+.col {
+    flex: 1;
+}
+
+.col-2 {
+    flex: 2;
+}
+
+.mt {
+    margin-top: 1em;
+}
+.mb {
+    margin-bottom: 1em;
+}
+.mr {
+    margin-right: 1em;
+}
+.ml {
+    margin-left: 1em;
+}
+
+/* Estilo del botón btn*/
+.btn {
+    background-color: #FFD966;
+    color: #000000;
+    font-weight: 700;
+    padding: 5px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    height: 40px;
+    border: 2px solid #333333;
+    box-shadow: 5px 5px 10px #000000;
+    font-size: 1.2rem;
+}
+
+.nav {
+    color: #CCCCCC;
+    background-color: #333333;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav h1 {
+    margin: 0.5em;
+}
+
+.title {
+    text-align: center;
+}
+
+.user-container {
+    display: flex;
+}
+
+.user-container .user-profile{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid #333333;
+}
+
+.user-container .user-profile .img-card-user{
+    width: 80px;
+}
+
+.user-container .user-feed{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.card {
+    width: 100%;
+    border: 2px solid #333333;
+}
+
+.card .header-card {
+    padding: 0.5em 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.card .header-card .user-name {
+    font-weight: 900;
+}
+
+.card .header-card .user-actions {
+    display: flex;
+    align-items: center;
+}
+
+.card .header-card .user-actions .user-likes{
+    margin-right: 2em;
+    font-weight: 600;
+}
+
+.card .content-card {
+    padding: 0.5em 1.5em;
+}

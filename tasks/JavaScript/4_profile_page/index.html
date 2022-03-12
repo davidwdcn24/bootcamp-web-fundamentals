@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Tarjeta de usuario (deber número 8)">
+    <meta name="description" content="Tarea 4 de javascript">
     <meta name="author" content="Washington Campaña - CodingDojo">
-    <meta name="keywords" content="Profile html css flex CodingDojo">
+    <meta name="keywords" content="Profile javascript css flex CodingDojo">
     <meta name="copyright" content="Washington Campaña - CodingDojo" />
     <meta http-equiv="cache-control" content="no-cache"/>
     <title>Profile</title>
@@ -36,7 +36,7 @@
                     <div class="content-card">
                         <img src="assets/images/images/jane-m.jpg" class="img-card-user" 
                             alt="Foto del usuario Jane Doe" alt="Foto del usuario Jane Doe"/>
-                        <h1>Jane Doe</h1>
+                        <h1 id="user_name">Jane Doe</h1>
                         <div class="card-ubication">
                             <img src="assets/images/icons/map-marker.png" alt="Ubicación" alt="Ubicación"/>
                             <span>Seattle</span>
@@ -47,7 +47,7 @@
                         </div>
                         <div class="card-edit-profile">
                             <img src="assets/images/icons/gear.png" alt="Configuración" alt="Configuración"/>
-                            <a href="#">edit profile</a>
+                            <a href="#" onclick="changeNameProfile()">edit profile</a>
                         </div>
                     </div>
                 </div>
@@ -65,7 +65,7 @@
             <div class="profile-connections">
                 <div class="requests card">
                     <div class="header-card">
-                        <span class="btn-requests">2</span><span>Connection Requests</span>
+                        <span class="btn-requests" id="bdgConnection">2</span><span>Connection Requests</span>
                     </div>
                     <div class="content-card">
                         <ul class="content-card-requests">
@@ -77,8 +77,8 @@
                                     <span>Todd E</span>
                                 </div>
                                 <div class="actions-requests">
-                                    <img src="assets/images/icons/accept-circle.png" alt="Aceptar" alt="Aceptar"/>
-                                    <img src="assets/images/icons/close-circle.png" alt="Cancelar" alt="Cancelar"/>
+                                    <img src="assets/images/icons/accept-circle.png" alt="Aceptar" alt="Aceptar" onclick="aceptConnectionRequest(this)"/>
+                                    <img src="assets/images/icons/close-circle.png" alt="Cancelar" alt="Cancelar" onclick="removeConnectionRequest(this)"/>
                                 </div>
                             </li>
                             <li>
@@ -89,8 +89,8 @@
                                     <span>Phil K</span>
                                 </div>
                                 <div class="actions-requests">
-                                    <img src="assets/images/icons/accept-circle.png" alt="Aceptar" alt="Aceptar"/>
-                                    <img src="assets/images/icons/close-circle.png" alt="Cancelar" alt="Cancelar"/>
+                                    <img src="assets/images/icons/accept-circle.png" alt="Aceptar" alt="Aceptar" onclick="aceptConnectionRequest(this)"/>
+                                    <img src="assets/images/icons/close-circle.png" alt="Cancelar" alt="Cancelar" onclick="removeConnectionRequest(this)"/>
                                 </div>
                             </li>
                         </ul>
@@ -101,7 +101,7 @@
                         <span class="btn-connections">500+</span><span>Your Connections</span>
                     </div>
                     <div class="content-card">
-                        <ul class="content-card-connections">
+                        <ul class="content-card-connections" id="lstYourConnections">
                             <li>
                                 <div class="imagen-connections">
                                     <img src="assets/images/images/adrien-s.jpg" 
@@ -143,5 +143,6 @@
             </div>
         </div>
     </div>
+    <script src="assets/js/scripts.js"></script>
 </body>
 </html>

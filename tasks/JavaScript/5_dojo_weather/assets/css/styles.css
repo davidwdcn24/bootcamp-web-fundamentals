@@ -6,10 +6,12 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 1.2rem;
+    
 }
 
 .container {
     width: 100%;
+    height: 100vh;
 }
 
 .row {
@@ -82,6 +84,7 @@ body {
 
 .content {
     width: 800px;
+    height: calc(100% - 250px);
     margin: 0 auto;
 }
 
@@ -92,7 +95,7 @@ body {
 .card {
     width: 100%;
     flex: 1;
-    border: 2px solid #333333;
+    background-color: #EEEEEE;
 }
 
 .card .card-header {
@@ -131,11 +134,18 @@ body {
     color: #2B78E4;
 }
 
+.footer {
+    width: 800px;
+    margin: 0 auto;
+}
+
 .cookies {
+    width: 800px;
     border: 2px solid #333333;
     padding: 0.5em 0;
     background-color: #EEEEEE;
     justify-content: center;
+    position: fixed;
 }
 
 .cookies .text {

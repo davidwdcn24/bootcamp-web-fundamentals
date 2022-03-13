@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Weather Forecast (tarea de javascript 5)">
+    <meta name="author" content="Washington Campaña - CodingDojo">
+    <meta name="keywords" content="Weather Forecast javascript html css CodingDojo">
+    <meta name="copyright" content="Washington Campaña - CodingDojo" />
+    <meta http-equiv="cache-control" content="no-cache"/>
+    <title>Weather Forecast</title>
+
+    <link rel="stylesheet" href="assets/css/styles.css" type="text/css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"/>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="nav">
+                <h1 class="nav-title">DojoWeather</h1>
+                <ul class="nav-links">
+                    <li><a href="#" onclick="showAlert(this)">Burbank</a></li>
+                    <li><a href="#" onclick="showAlert(this)">Chicago</a></li>
+                    <li><a href="#" onclick="showAlert(this)">Dallas</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <div class="row city mt">
+                <h2>San Jose</h2>
+                <div class="form-control">
+                    <label for="dwlTemperatures">show temperature in</label>
+                    <select name="dwlTemperatures" id="dwlTemperatures" onchange="changeGrades(this)">
+                        <option value="gc" selected>°C</option>
+                        <option value="gf">°F</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row mt weather">
+                <div class="card">
+                    <div class="card-header">
+                        <span>Today</span>
+                    </div>
+                    <div class="card-content">
+                        <img src="assets/images/some_rain.png" class="imgWeather"
+                            alt="Día lluvioso" title="Día lluvioso" />
+                        <span class="title">some rain</span>
+                        <div class="result">
+                            <div class="result-max"><span>24</span>°</div>
+                            <div class="result-min"><span>18</span>°</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card ml">
+                    <div class="card-header">
+                        <span>Tomorrow</span>
+                    </div>
+                    <div class="card-content">
+                        <img src="assets/images/some_sun.png" class="imgWeather"
+                            alt="Día soleado" title="Día soleado" />
+                        <span class="title">some sun</span>
+                        <div class="result">
+                            <div class="result-max"><span>27</span>°</div>
+                            <div class="result-min"><span>19</span>°</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card ml">
+                    <div class="card-header">
+                        <span>Friday</span>
+                    </div>
+                    <div class="card-content">
+                        <img src="assets/images/some_clouds.png" class="imgWeather"
+                            alt="Día normal" title="Día normal" />
+                        <span class="title">some clouds</span>
+                        <div class="result">
+                            <div class="result-max"><span>21</span>°</div>
+                            <div class="result-min"><span>16</span>°</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card ml">
+                    <div class="card-header">
+                        <span>Saturday</span>
+                    </div>
+                    <div class="card-content">
+                        <img src="assets/images/some_sun.png" class="imgWeather"
+                            alt="Día soleado" title="Día soleado" />
+                        <span class="title">some sun</span>
+                        <div class="result">
+                            <div class="result-max"><span>26</span>°</div>
+                            <div class="result-min"><span>21</span>°</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row cookies mt">
+                <img src="assets/images/cookie.png" alt="Cookies" title="Cookies" />
+                <div class="text">
+                    <p class="title">Stop! Cookies time</p>
+                    <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyse our traffic. <a href="#">Read more...</a></p>
+                </div>
+                <button type="button" class="ml mr btn" onclick="acceptCookies(this)">I Accept</button>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/scripts.js"></script>
+</body>
+</html>

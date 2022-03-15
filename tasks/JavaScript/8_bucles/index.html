@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bucles (tarea de javascript 7)">
+    <meta name="author" content="Washington Campaña - CodingDojo">
+    <meta name="keywords" content="Bucles javascript html css CodingDojo">
+    <meta name="copyright" content="Washington Campaña - CodingDojo" />
+    <meta http-equiv="cache-control" content="no-cache"/>
+    <title>Bucles</title>
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <div class="card">
+        <div class="card-header"><span>Imprimir impares</span></div>
+        <div class="card-content">
+            <div class="form">
+                <div class="form-control">
+                    <label for="txtInitial">Valor inicial</label>
+                    <input type="text" name="txtInitial" id="txtInitial" placeholder="Ingrese un número inicial" value="1"/>
+                </div>
+                <div class="form-control ml">
+                    <label for="txtEnd">Valor final</label>
+                    <input type="text" name="txtEnd" id="txtEnd" placeholder="Ingrese un número final" value="20"/>
+                </div>
+                <button type="button" class="btn ml" onclick="imprimirImpares()">Calcular</button>
+            </div>
+            <div id="rslImprimirImpares" class="result"></div>
+        </div>
+    </div>
+    <div class="card mt">
+        <div class="card-header"><span>Disminuir múltiplos</span></div>
+        <div class="card-content">
+            <div class="form">
+                <div class="form-control">
+                    <label for="txtInitialM">Valor inicial</label>
+                    <input type="text" name="txtInitialM" id="txtInitialM" placeholder="Ingrese un número inicial" value="100"/>
+                </div>
+                <div class="form-control ml">
+                    <label for="txtEndM">Valor final</label>
+                    <input type="text" name="txtEndM" id="txtEndM" placeholder="Ingrese un número final" value="0"/>
+                </div>
+                <div class="form-control ml">
+                    <label for="txtMultiplos">Números que sean multiplos para</label>
+                    <input type="text" name="txtMultiplos" id="txtMultiplos" placeholder="Ingrese un número inicial" value="3"/>
+                </div>
+                <button type="button" class="btn ml" onclick="disminuirMultiplos()">Calcular</button>
+            </div>
+            <div id="rslDisminuirMultiplos" class="result"></div>
+        </div>
+    </div>
+    <div class="card mt">
+        <div class="card-header"><span>Imprime la secuencia</span></div>
+        <div class="card-content">
+            <span><b>Secuecia: </b> 4, 2.5, 1, -0.5, -2, -3.5</span>
+            <button type="button" class="btn ml" onclick="imprimirSecuencia()">Generar</button>
+            <div id="rslSecuencia" class="result"></div>
+        </div>
+    </div>
+    <div class="card mt">
+        <div class="card-header"><span>Sigma</span></div>
+        <div class="card-content">
+            <div class="form">
+                <div class="form-control">
+                    <label for="txtUltimoS">Último número</label>
+                    <input type="text" name="txtUltimoS" id="txtUltimoS" placeholder="Ingrese el último número" value="100"/>
+                </div>
+                <button type="button" class="btn ml" onclick="sigma()">Calcular</button>
+            </div>
+            <div id="rslSigma" class="result"></div>
+        </div>
+    </div>
+    <div class="card mt">
+        <div class="card-header"><span>Factorial</span></div>
+        <div class="card-content">
+            <div class="form">
+                <div class="form-control">
+                    <label for="txtUltimoF">Último número</label>
+                    <input type="text" name="txtUltimoF" id="txtUltimoF" placeholder="Ingrese el último número" value="12"/>
+                </div>
+                <button type="button" class="btn ml" onclick="factorial()">Calcular</button>
+            </div>
+            <div id="rslFactorial" class="result"></div>
+        </div>
+    </div>
+
+    <script src="assets/js/scripts.js"></script>
+</body>
+</html>

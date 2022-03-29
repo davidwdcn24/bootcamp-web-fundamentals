@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial</title>
+
+    <style>
+        .container{
+            width: 600px;
+            height: 600px;
+        }
+
+        .box {
+            width: 150px;
+            height: 150px;
+            background-color: blueviolet;
+            position: absolute;
+        }
+    </style>
+</head>
+<body >
+    <div class="container">
+        <div id="box" class="box"></div>
+    </div>
+    <div>
+        <input type="number" name="txtNumero" id="txtNumero" 
+            title="Ingrese el número para realizar el factorial"
+            value="30"/>
+        <button type="button" onclick="calcularFactorial()">Calcular</button>
+    </div>
+    <div>
+        <span>El resultado es:</span>
+        <span id="spnResultado"></span>
+    </div>
+
+    <script type="text/javascript">
+        function calcularFactorial(){
+            var numero = parseInt(document.getElementById("txtNumero").value);
+            if(numero > 0){
+                var resultado = 1;
+                for (var i = numero; i > 0; i--) {
+                    resultado = resultado*i;
+                }
+
+                document.getElementById("spnResultado").innerText = resultado;
+            }else{
+                alert("Debe ingresar un valor > 0");
+            }
+        }
+
+        document.onkeydown = function(e){
+            var pixeles = parseInt(document.getElementById("txtNumero").value);
+
+            if(e.keyCode == 37){
+                // Left
+                var leftPosition = document.getElementById("box").offsetLeft;
+                leftPosition = leftPosition - pixeles;
+                if(leftPosition > 0)
+                    document.getElementById("box").style.left = leftPosition + "px";
+            }
+            else if (e.keyCode == 39){
+                // Right
+                var rightPosition = document.getElementById("box").offsetLeft;
+                rightPosition = rightPosition + pixeles;
+                if(rightPosition <= 600)
+                    document.getElementById("box").style.left = rightPosition + "px";
+            }
+            else if (e.keyCode == 38){
+                // Top
+                var topPosition = document.getElementById("box").offsetTop;
+                topPosition = topPosition - pixeles;
+                if(topPosition > 0)
+                    document.getElementById("box").style.top = topPosition + "px";
+            }
+            else if (e.keyCode == 40){
+                // Bottom
+                var bottomPosition = document.getElementById("box").offsetTop;
+                bottomPosition = bottomPosition + pixeles;
+                if(bottomPosition <= 600)
+                    document.getElementById("box").style.top = bottomPosition + "px";
+            }
+        }
+    </script>
+</body>
+</html>
